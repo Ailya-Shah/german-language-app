@@ -1,0 +1,21 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: black; /* Ensures text is black throughout the body */
+}
+
+.flashcard {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  color: black; /* Ensures text inside the flashcard is black */
+}
+/* styles.css */
+
+body {
+  background-color: skyblue;
+}
+
+  
