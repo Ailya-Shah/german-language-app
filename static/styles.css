@@ -1,21 +1,84 @@
-/* styles.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: black; /* Ensures text is black throughout the body */
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.flashcard {
-  border: 1px solid #ccc;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000; /* Set background to black */
+  color: #fff;  /* Text color white */
+  line-height: 1.6;
   padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  color: black; /* Ensures text inside the flashcard is black */
 }
-/* styles.css */
 
-body {
-  background-color: skyblue;
+h1 {
+  text-align: center;
+  color: steelblue;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
 }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #D3D3D3; /* Set card (container) color to grey */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #800000; /* Maroon color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #660000; /* Darker maroon on hover */
+}
+
+.result {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.result h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.result p {
+  font-size: 1.2rem;
+  color: steelblue;
+}
+
 
   

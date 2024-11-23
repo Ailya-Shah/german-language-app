@@ -2,29 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index Page</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Translator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Welcome to the Index Page</h1>
-    <h1>This is a GERMAN learning platform</h1>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to German Learning</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="welcome">
-    <h1>Welcome to German Learning App!</h1>
-    <button onclick="window.location.href='menu.html'">Start Learning</button>
-  </div>
-  <script src="script.js"></script>
+    <div class="container">
+        <h1>Welcome to the German Translator</h1>
+        <p>Enter the text below to translate from English to German:</p>
+
+        <form action="/translate" method="POST">
+            <textarea name="text_to_translate" placeholder="Enter text here..." required></textarea>
+            <button type="submit">Translate</button>
+        </form>
+
+        {% if translation %}
+            <div class="result">
+                <h2>Translation:</h2>
+                <p>{{ translation }}</p>
+            </div>
+        {% endif %}
+    </div>
 </body>
 </html>
 
-</body>
-</html>
+
 
