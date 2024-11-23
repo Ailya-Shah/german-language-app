@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Numbers</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='counting.css') }}">
+    <script src="{{ url_for('static', filename='counting.js') }}" defer></script>
+</head>
+<body>
+    <div class="counting-container">
+        <h1>Learn German Numbers</h1>
+        <p>Click a number to see its German translation!</p>
+        <div class="grid-container">
+            <!-- Manually create number boxes from 1 to 50 -->
+            {% for i in range(1, 51) %}
+                <div class="grid-item">
+                    <div class="number">{{ i }}</div>
+                    <div class="translation-text"></div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
+
+
+

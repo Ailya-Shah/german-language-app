@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.counting-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 columns */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item:hover {
+    background-color: #444444; /* Change color on hover */
+}
+
+.number {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.translation-text {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: 10px;
+}
+
+.translation-text.show-translation {
+    opacity: 1;
+}
+

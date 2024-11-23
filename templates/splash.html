@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Language Learning App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="app-name">German Learner</div>
+        <div class="slogan">Master German with Ease</div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="main-menu" class="main-menu">
+        <button onclick="location.href='/counting'">German Counting</button>
+        <button onclick="location.href='/translate'">AI Translator</button>
+        <button onclick="location.href='/flashcards'">Flashcards</button>
+    </div>
+
+    <!-- Optional sprite -->
+    <div id="sprite" class="sprite">
+        <!-- Add your sprite here later -->
+    </div>
+
+    <script>
+        // Smoothly transition from splash screen to main menu after 3 seconds
+        setTimeout(function() {
+            document.getElementById("splash-screen").style.display = "none";
+            document.getElementById("main-menu").style.display = "block";
+        }, 3000); // 3-second delay for the splash screen
+    </script>
+</body>
+</html>

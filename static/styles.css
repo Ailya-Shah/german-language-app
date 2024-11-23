@@ -1,3 +1,55 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Splash screen styles */
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+}
+
+.app-name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #a7320e;
+}
+
+.slogan {
+  font-size: 1.5rem;
+  color: #FFF;
+  margin-top: 10px;
+}
+
+/* Main menu styles */
+.main-menu {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-menu button {
+  background-color: #5425a5;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-menu button:hover {
+  background-color: #3b1a7d;
+}
 /* Basic Reset */
 * {
   margin: 0;
@@ -7,15 +59,15 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #000000; /* Set background to black */
-  color: #fff;  /* Text color white */
+  background-color: #f4f4f9;
+  color: #333;
   line-height: 1.6;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: steelblue;
+  color: #5425a5;
   margin-bottom: 20px;
   font-size: 2.5rem;
 }
@@ -23,7 +75,7 @@ h1 {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background-color: #D3D3D3; /* Set card (container) color to grey */
+  background-color: white;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -49,7 +101,7 @@ textarea {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #800000; /* Maroon color */
+  background-color: #5425a5;
   color: white;
   border: none;
   border-radius: 5px;
@@ -59,7 +111,7 @@ button {
 }
 
 button:hover {
-  background-color: #660000; /* Darker maroon on hover */
+  background-color: #5425a5;
 }
 
 .result {
@@ -77,8 +129,14 @@ button:hover {
 
 .result p {
   font-size: 1.2rem;
-  color: steelblue;
+  color: #5425a5;
 }
+
+}
+
+ 
+
+
 
 
   
