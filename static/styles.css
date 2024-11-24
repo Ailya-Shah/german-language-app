@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 /* General body styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   background-color: black;
   color: white;
   margin: 0;
@@ -21,7 +23,7 @@ body {
 .app-name {
   font-size: 3rem;
   font-weight: bold;
-  color: #a7320e;
+  color: #0e4ba7;
 }
 
 .slogan {
@@ -37,7 +39,7 @@ body {
 }
 
 .main-menu button {
-  background-color: #5425a5;
+  background-color: #0e4ba7;
   color: white;
   padding: 15px;
   margin: 10px;
@@ -48,7 +50,7 @@ body {
 }
 
 .main-menu button:hover {
-  background-color: #3b1a7d;
+  background-color: #0e4ba7;
 }
 /* Basic Reset */
 * {
@@ -58,16 +60,16 @@ body {
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
   background-color: #f4f4f9;
-  color: #333;
+  color: #0e4ba7;
   line-height: 1.6;
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #5425a5;
+  color: #0e4ba7;
   margin-bottom: 20px;
   font-size: 2.5rem;
 }
@@ -101,7 +103,7 @@ textarea {
 button {
   width: 100%;
   padding: 10px;
-  background-color: #5425a5;
+  background-color: #0e4ba7;
   color: white;
   border: none;
   border-radius: 5px;
@@ -111,7 +113,7 @@ button {
 }
 
 button:hover {
-  background-color: #5425a5;
+  background-color: #0e4ba7;
 }
 
 .result {
@@ -129,7 +131,7 @@ button:hover {
 
 .result p {
   font-size: 1.2rem;
-  color: #5425a5;
+  color: #0e4ba7;
 }
 
 
