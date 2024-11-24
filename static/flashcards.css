@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Title */
+.title {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #e3d10dfa;
+    text-align: center;
+}
+
+/* Flashcard Container */
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+}
+
+/* Individual Flashcard */
+.flashcard {
+    width: 150px;
+    height: 100px;
+    background-color: #4c221356;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.flashcard:hover {
+    background-color: #4c221356;
+    transform: translateY(-10px);
+}
+
+/* Flashcard Back */
+.flashcard .back {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fffcfc;
+}
+
+.flashcard.flipped .front {
+    display: none;
+}
+
+.flashcard.flipped .back {
+    display: block;
+}
+
+
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    filter: grayscale(100%); /* Makes the background black and white */
+    z-index: -1; /* Ensures the image stays behind other content */
+}
+
+
