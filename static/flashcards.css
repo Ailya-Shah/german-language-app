@@ -1,9 +1,10 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #222;
+    background-color: #2c0f0f;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -17,7 +18,7 @@ body {
 .title {
     margin-bottom: 20px;
     font-size: 2.5rem;
-    color: #e3d10dfa;
+    color: #3977d4;
     text-align: center;
 }
 
@@ -26,7 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     max-width: 800px;
 }
 
@@ -34,7 +35,7 @@ body {
 .flashcard {
     width: 150px;
     height: 100px;
-    background-color: #4c221356;
+    background-color: #3977d482;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -47,7 +48,7 @@ body {
 }
 
 .flashcard:hover {
-    background-color: #4c221356;
+    background-color: #3977d482;
     transform: translateY(-10px);
 }
 
@@ -67,21 +68,5 @@ body {
     display: block;
 }
 
-
-
-body::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://images.pexels.com/photos/109629/pexels-photo-109629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Replace with the actual path to your image */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    filter: grayscale(100%); /* Makes the background black and white */
-    z-index: -1; /* Ensures the image stays behind other content */
-}
 
 
