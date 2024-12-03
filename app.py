@@ -41,15 +41,23 @@ def translate():
 # Route for German Counting page
 @app.route('/counting')
 def counting():
-    return render_template('counting.html')  # You can create counting.html for this page
+    return render_template('counting.html')  # Create counting.html for this page
+
 
 # Route for Flashcards page
 @app.route('/flashcards')
 def flashcards():
-    return render_template('flashcards.html')  # You can create flashcards.html for this page
+    return render_template('flashcards.html')  # Create flashcards.html for this page
+
+
+# Route for Names of German Cities page
+@app.route('/cities')
+def cities():
+    return render_template('german.html')  # Using german.html for this page
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
 
