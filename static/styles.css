@@ -162,6 +162,27 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* Style for the Flashcards Subcategory Menu */
+#flashcard-subcategories button {
+  width: 200px; /* Set width of each button */
+  height: 60px; /* Set height of each button */
+  font-size: 1.2rem; /* Set font size */
+  padding: 10px; /* Adjust padding to make buttons bigger or smaller */
+  margin: 10px; /* Space between buttons */
+  background-color: #3a0f0f; /* Background color of the button */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for buttons */
+#flashcard-subcategories button:hover {
+  background-color: #3a0f0f; /* Darker background when hovered */
+}
+
+
 /* Result container styling */
 .result {
   margin-top: 30px;

@@ -14,21 +14,42 @@
     </div>
 
     <!-- Main Menu -->
-    <div id="main-menu" class="main-menu">
+    <div id="main-menu" class="main-menu" style="display:none;">
         <button onclick="location.href='/counting'">German Counting</button>
         <button onclick="location.href='/translate'">AI Translator</button>
-        <button onclick="location.href='/flashcards'">Flashcards</button>
+
+        <!-- Flashcards Button with Subcategories -->
+        <button id="flashcards-btn">Flashcards</button>
+        
+        <!-- Flashcards Subcategories -->
+        <div id="flashcard-subcategories" style="display:none;">
+            <button onclick="location.href='/flashcards/basic'">Basic Words</button>
+            <button onclick="location.href='/flashcards/advanced'">Advanced Words</button>
+            <button onclick="location.href='/flashcards/verbs'">Verbs</button>
+        </div>
+
         <button onclick="location.href='/cities'">Names of German Cities</button>
-    <div id="sprite" class="sprite">
-        <!-- Add your sprite here later -->
+        <button onclick="location.href='/books'">Book recommendations</button>
+        <button onclick="location.href='/quiz'">Take Quiz</button>
+
+        <div id="sprite" class="sprite">
+            <!-- Add your sprite here later -->
+        </div>
     </div>
 
     <script>
-        // Smoothly transition from splash screen to main menu after 3 seconds
+        // Smoothly transition from splash screen to main menu after 2 seconds
         setTimeout(function() {
             document.getElementById("splash-screen").style.display = "none";
             document.getElementById("main-menu").style.display = "block";
         }, 2000); // 2-second delay for the splash screen
+
+        // Show the subcategories when Flashcards is clicked
+        document.getElementById("flashcards-btn").addEventListener('click', function() {
+            var subcategories = document.getElementById("flashcard-subcategories");
+            subcategories.style.display = subcategories.style.display === 'none' ? 'block' : 'none';  // Toggle visibility
+        });
     </script>
 </body>
 </html>
+

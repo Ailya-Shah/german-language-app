@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="quiz-title">Quiz</h1>
+        <form action="/submit-quiz" method="POST">
+            {% for question in question_data %}
+            <div class="question">
+                <p class="question-text">{{ question.question_text }}</p>
+                <div class="options">
+                    {% for option in question.options %}
+                    <div class="option">
+                        <input type="radio" id="option_{{ option[0] }}" name="question_{{ question.question_id }}" value="{{ option[0] }}">
+                        <label for="option_{{ option[0] }}">{{ option[1] }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
