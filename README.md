@@ -1,4 +1,4 @@
-# 🇩🇪 German Language Learning App
+# VOX: German Language Learning App
 
 A simple, interactive web app to help users learn German through flashcards, number counting, and an AI-based translation assistant.
 
