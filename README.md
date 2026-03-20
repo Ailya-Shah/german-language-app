@@ -28,8 +28,7 @@ A simple, interactive web app to help users learn German through flashcards, num
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/german-language-app.git
-cd german-language-app
+git clone https://github.com/Ailya-Shah/german-language-app
 ```
 
 ### 2. Set up virtual environment (optional but recommended)
