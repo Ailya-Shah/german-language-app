@@ -75,7 +75,7 @@ ngrok http 5000
 
 ## 🧠 Quiz & Database
 
-- Questions and options are stored in `fuck.db` using SQLite.
+- Questions and options are stored in `database.db` using SQLite.
 - Use **DB Browser for SQLite** to edit or view the quiz data.
 - Sample schema includes:
   - `questions (id INT, question TEXT)`
